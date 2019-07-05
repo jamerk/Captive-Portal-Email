@@ -5,5 +5,4 @@ Each email submitted is marked with date/time and stored with an incremental num
 There are two versions here. One is meant for Ruckus Wireless' Hotspot service (Tested with both Unleashed and ZoneDirector controllers) and one is meant for Ubiquiti Unifi controllers.
 <br><br>
 ## To Do
-- Test with both sonicwall and ruckus wireless guest portal services <br>
 - Create a record management page with a reset/export button <br>
