@@ -13,4 +13,6 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 - Email validation via https://itnext.io/https-medium-com-joshstudley-form-field-validation-with-html-and-a-little-javascript-1bda6a4a4c8c
 <br><br>
 ## To Do
-- Create a record management page with a reset/export button <br>
+- Create a record management page with reset/export capability <br>
+- Screenshots for configuration <br>
+- Collect MAC address of each device that authenticates <br>
