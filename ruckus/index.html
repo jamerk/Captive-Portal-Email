@@ -1,10 +1,22 @@
-
+<html lang="en">
 <head>
-<title>Free (as beer) Wireless Internet Service</title>
+<title>Guest Wireless Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 </head>
 
+<!-- Bringing in jQuery for a little button clicking later -->
 <script src="jquery.min.js"></script>
 
+<!-- This first script section is for authenticating with Ruckus' Hotspot service -->
 <script type="text/javascript">
 function get_param(name)
 {
@@ -20,6 +32,8 @@ return unescape(value_pair[1]);
 return "";
 }
 </script>
+
+<!-- This scripting piece allows us to submit our emails WITHOUT reloading the page, we need to talk to Ruckus and our DB in one submission -->
 <script type="text/javascript">
 	$(document).ready( function () {
 		$("#form1").submit( function () {
@@ -33,18 +47,37 @@ return "";
 		});
 	});
 </script>
-<body>
-<center>
-<h2>Free (as beer) Wireless</h2>
-<p>Usage policy: Do no evil. blah blah blah...
+
+<body class="text-center">
+<h1 class="h3 mb-3 font-weight-normal">Sign in Below for Free Wifi</h1>
 <form id="form1">
-Email:<br>
-<input type="text" name="emails"><br>
-<input type="submit" name="Submit" id="submitbutton">
+Enter Your Email Address:<br>
+<input id="emailField" type="email" name="emails"><br><br>
+<input type="submit" name="Submit" id="submitbutton" class="btn btn-lg btn-primary" value="Connect" disabled>
 </form>
 
-</center>
+<!-- Only allow emails to be submitted -->
+<script>
+const form1 = document.getElementById('form1');
+const emailField = document.getElementById('emailField');
+const submitbutton = document.getElementById('submitbutton');
+  
+emailField.addEventListener('keyup', function (event) {
+  isValidEmail = emailField.checkValidity();
+  
+  if ( isValidEmail ) {
+    submitbutton.disabled = false;
+  } else {
+    submitbutton.disabled = true;
+  }
+});
+  
+submitbutton.addEventListener('click', function (event) {
+  form1.submit();
+});
+</script>
 
+<!-- Authenticate with Ruckus Hotspot service -->
 <script type="text/javascript">
 document.write('<form method=POST action="http://' + get_param("sip") + ':9997/login" id="form2">');
 </script>
@@ -52,7 +85,7 @@ document.write('<form method=POST action="http://' + get_param("sip") + ':9997/l
 <input type="hidden" name="password" value="user">
 </form>
 
-
+<!-- Submit the above form without using a second submit button -->
 <script>
  $("#submitbutton").on("click", function()
 {
@@ -61,4 +94,4 @@ document.write('<form method=POST action="http://' + get_param("sip") + ':9997/l
 </script>
 
 </body>
-
+</html>
