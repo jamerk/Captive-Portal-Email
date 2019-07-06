@@ -16,3 +16,6 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 - Create a record management page with reset/export capability <br>
 - Screenshots for configuration <br>
 - Collect MAC address of each device that authenticates <br>
+<br>
+## Known Issues
+- Firefox and Microsoft Edge do not work at the moment... Chrome/IE/Mobile Chrome/Mobile Safari all work<br>
