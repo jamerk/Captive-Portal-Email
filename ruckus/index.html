@@ -1,0 +1,64 @@
+
+<head>
+<title>Free (as beer) Wireless Internet Service</title>
+</head>
+
+<script src="jquery.min.js"></script>
+
+<script type="text/javascript">
+function get_param(name)
+{
+if (location.href.indexOf("?") >= 0) {
+var query=location.href.split("?")[1];
+var params=query.split("&");
+for (var i = 0; i < params.length; i ++) {
+value_pair=params[i].split("=");
+if (value_pair[0] == name)
+return unescape(value_pair[1]);
+}
+}
+return "";
+}
+</script>
+<script type="text/javascript">
+	$(document).ready( function () {
+		$("#form1").submit( function () {
+			var formdata = $(this).serialize();
+			$.ajax({
+			    type: "POST",
+			    url: "submit.php",
+			    data: formdata
+			 });
+			return false;
+		});
+	});
+</script>
+<body>
+<center>
+<h2>Free (as beer) Wireless</h2>
+<p>Usage policy: Do no evil. blah blah blah...
+<form id="form1">
+Email:<br>
+<input type="text" name="emails"><br>
+<input type="submit" name="Submit" id="submitbutton">
+</form>
+
+</center>
+
+<script type="text/javascript">
+document.write('<form method=POST action="http://' + get_param("sip") + ':9997/login" id="form2">');
+</script>
+<input type="hidden" name="username" value="user">
+<input type="hidden" name="password" value="user">
+</form>
+
+
+<script>
+ $("#submitbutton").on("click", function()
+{
+   $("#form2").submit();
+ });
+</script>
+
+</body>
+
