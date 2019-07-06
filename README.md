@@ -9,7 +9,8 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 - jQuery, https://jquery.com/
 - https://www.quora.com/How-can-I-submit-two-forms-with-one-button <br>
 - https://forums.digitalpoint.com/threads/how-to-submit-a-form-without-rerload-or-redirect-the-page.2151997/ <br>
-- Bootstrap of course<br>
+- Bootstrap of course, https://getbootstrap.com/<br>
+- Email validation via https://itnext.io/https-medium-com-joshstudley-form-field-validation-with-html-and-a-little-javascript-1bda6a4a4c8c
 <br><br>
 ## To Do
 - Create a record management page with a reset/export button <br>
