@@ -1,5 +1,5 @@
 # Ruckus Captive Portal Setup
-Captive portal for Ruckus Wireless hotspot service.
+Captive portal with email collection for Ruckus Wireless hotspot service.
 <br><br>
 ## Requirements
 - Apache2/Nginx with PHP configured<br>
