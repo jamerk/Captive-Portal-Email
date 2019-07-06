@@ -6,6 +6,7 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 
 ## Credits
 - Alex Ortmanns, https://forums.ruckuswireless.com/ruckuswireless/topics/best_practice_for_a_captive_portal_without_a_password <br>
+- jQuery, https://jquery.com/
 - https://www.quora.com/How-can-I-submit-two-forms-with-one-button <br>
 - https://forums.digitalpoint.com/threads/how-to-submit-a-form-without-rerload-or-redirect-the-page.2151997/ <br>
 - Bootstrap of course<br>
