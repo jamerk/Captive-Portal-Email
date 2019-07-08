@@ -10,11 +10,14 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 - https://www.quora.com/How-can-I-submit-two-forms-with-one-button <br>
 - https://forums.digitalpoint.com/threads/how-to-submit-a-form-without-rerload-or-redirect-the-page.2151997/ <br>
 - Bootstrap of course, https://getbootstrap.com/<br>
-- Email validation via https://itnext.io/https-medium-com-joshstudley-form-field-validation-with-html-and-a-little-javascript-1bda6a4a4c8c
+- Email validation via https://itnext.io/https-medium-com-joshstudley-form-field-validation-with-html-and-a-little-javascript-1bda6a4a4c8c<br>
+- jQuery Validation, https://jqueryvalidation.org/ <br>
+- Darin Dimitrov, https://stackoverflow.com/questions/5052315/how-to-fire-jquery-function-only-if-form-is-valid <br>
+
 <br><br>
 ## To Do
 - Create a record management page with reset/export capability <br>
 - Screenshots for configuration <br>
 - Collect MAC address of each device that authenticates <br><br>
 ## Known Issues
-- Firefox and Microsoft Edge do not work at the moment... Chrome/IE/Mobile Chrome/Mobile Safari all work<br>
+- None at the moment! 
