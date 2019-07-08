@@ -12,7 +12,7 @@ Captive portal with email collection for Ruckus Wireless hotspot service.
 2) Create a directory on your webserver called ruckus and upload the files under Captive-Portal-Email/ruckus to it (Excluding readme.md of course) <br>
 2) Create a new user called captive in your SQL server with a unique password <br>
 3) Update the captive user password with your unique password in the submit.php file
-4) Test by navigating to http://WebServerAddress/ruckus, type in an email, and hit submit. You should be directed to about:blank#blocked and the email you typed should be in the users table in your captive_data database.  <br>
+4) Test by navigating to http://WebServerAddress/ruckus, type in an email, and hit submit. The email you typed should be in the users table in your captive_data database.  <br>
 
 ## Unleashed Controller
 1) Login to your Unleashed root AP<br>
