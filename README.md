@@ -17,6 +17,7 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 <br><br>
 ## To Do
 - Make the Ruckus variation more secure by removing the Ruckus user login from the index file <br>
+- Make it all work with IIS and SQL Express <br>
 - Create a record management page with reset/export capability <br>
 - Screenshots for configuration <br>
 - Collect MAC address of each device that authenticates <br><br>
