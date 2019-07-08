@@ -11,10 +11,12 @@
         }
       }
     </style>
-</head>
 
 <!-- Bringing in jQuery for a little button clicking later -->
 <script src="jquery.min.js"></script>
+
+<!-- And the jQuery Validation plug-in to validate emails -->
+<script src="jquery.validate.min.js"></script>
 
 <!-- This first script section is for authenticating with Ruckus' Hotspot service -->
 <script type="text/javascript">
@@ -32,17 +34,21 @@ return unescape(value_pair[1]);
 return "";
 }
 </script>
+</head>
 
 <!-- This scripting piece allows us to submit our emails WITHOUT reloading the page, we need to talk to Ruckus and our DB in one submission -->
+<!-- We're also validating emails before we allow a submission here -->
 <script type="text/javascript">
 	$(document).ready( function () {
 		$("#form1").submit( function () {
+			if($(this).valid()) {			
 			var formdata = $(this).serialize();
 			$.ajax({
 			    type: "POST",
 			    url: "submit.php",
 			    data: formdata
-			 });
+			 })};
+			$("#form2").submit()
 			return false;
 		});
 	});
@@ -52,30 +58,9 @@ return "";
 <h1 class="h3 mb-3 font-weight-normal">Sign in Below for Free Wifi</h1>
 <form id="form1">
 Enter Your Email Address:<br>
-<input id="emailField" type="email" name="emails"><br><br>
-<input type="submit" name="Submit" id="submitbutton" class="btn btn-lg btn-primary" value="Connect" disabled>
+<input id="emailField" type="email" name="emails" required><br><br>
+<input type="submit" name="Submit" id="submitbutton" class="btn btn-lg btn-primary" value="Connect">
 </form>
-
-<!-- Only allow emails to be submitted -->
-<script>
-const form1 = document.getElementById('form1');
-const emailField = document.getElementById('emailField');
-const submitbutton = document.getElementById('submitbutton');
-  
-emailField.addEventListener('keyup', function (event) {
-  isValidEmail = emailField.checkValidity();
-  
-  if ( isValidEmail ) {
-    submitbutton.disabled = false;
-  } else {
-    submitbutton.disabled = true;
-  }
-});
-  
-submitbutton.addEventListener('click', function (event) {
-  form1.submit();
-});
-</script>
 
 <!-- Authenticate with Ruckus Hotspot service -->
 <script type="text/javascript">
@@ -84,14 +69,6 @@ document.write('<form method=POST action="http://' + get_param("sip") + ':9997/l
 <input type="hidden" name="username" value="user">
 <input type="hidden" name="password" value="user">
 </form>
-
-<!-- Submit the above form without using a second submit button -->
-<script>
- $("#submitbutton").on("click", function()
-{
-   $("#form2").submit();
- });
-</script>
 
 </body>
 </html>
