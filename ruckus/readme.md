@@ -21,5 +21,5 @@ Captive portal with email collection for Ruckus Wireless hotspot service.
 4) Name it whatever you want and set your User Session settings to what you would like<br>
 5) Set the login page to http://WebServerAddress/ruckus<br>
 6) Set your Start Page if needed <br>
-7) Click Ok then navigate to System > Users and create a new user called user with password user <br>
+7) Click Ok then navigate to System > Users and create a new user with the username/password you entered into auth.js above <br>
 8) Click Ok and then create a new SSID with Hotspot Service as the Usage Type and your Hotspot Services profile you created above selected in the drop down menu. <br>
