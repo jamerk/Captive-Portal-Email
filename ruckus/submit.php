@@ -10,9 +10,10 @@ if($link === false){
 
 // Escape user inputs for security
 $emails = mysqli_real_escape_string($link, $_REQUEST['emails']);
+$mac = mysqli_real_escape_string($link, $_REQUEST['mac']);
 
 // attempt insert query execution
-$sql = "INSERT INTO users (emails) VALUES ('$emails')";
+$sql = "INSERT INTO users (emails, mac) VALUES ('$emails', '$mac')";
 if(mysqli_query($link, $sql)){
    echo "Records added successfully.";
 } else{
