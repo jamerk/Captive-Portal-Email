@@ -1,7 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "captive", "just4admin", "captive_data");
+$link = mysqli_connect("localhost", "captive", "YourCaptiveUserPassword", "captive_data");
 
 // Check connection
 if($link === false){
