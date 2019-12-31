@@ -4,9 +4,9 @@ Captive portal with email collection for Ruckus Wireless hotspot service.
 ## Requirements
 - Apache2/Nginx with PHP configured<br>
 - PHP with the FPM and MySQL extensions<br>
-- MySQL/MariaDB<br>
+- MySQL/MariaDB<br><br>
 This server must be accessible to clients, I spun up a very small Debian VM on the VLAN I use for guests that is fully seperate from important infrastructure just in case it's compromised.<br>
-<br>
+<br><br>
 
 ## Initial Setup
 1) Import the Captive-Portal-Email/captive_data.sql database file into your SQL server <br>
