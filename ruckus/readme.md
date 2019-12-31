@@ -26,7 +26,7 @@ This server must be accessible to clients, I spun up a very small Debian VM on t
 7) Click Ok then navigate to System > Users and create a new user with the username/password you entered into auth.js in Initial Setup above<br>
 8) Click Ok and then create a new SSID with Hotspot Service as the Usage Type and your Hotspot Services profile you created above selected in the drop down menu. <br><br>
 ## ZoneDirector Controller
-1) 1) Login to your ZoneDirector<br>
+1) Login to your ZoneDirector<br>
 2) Go to 'Services & Profiles' > 'Hotspot Services'<br>
 3) Click 'Create'<br>
 4) Name it whatever you want and set your User Session settings to what you would like<br>
