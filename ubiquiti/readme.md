@@ -34,11 +34,11 @@ FLUSH PRIVILEGES;
 <br><br>
 5) Next we edit unifi.php. Change the Unifi_User, Unifi_Password, Unifi_Controller_IP, Unifi_Version (For Example mine was 5.10.25), and if necessary the Unifi site (Currently set to default).
 <br><br>
-6) Test what you've done so far by navigating to and submitting an email address at your captive portal -> http://Captive Portal Web Server IP/guest/s/default<br>
+6) Test what you've done so far by navigating to and submitting an email address at your captive portal -> http://Captive_Portal_Web_Server_IP/guest/s/default<br>
 Log into your SQL server and check that the email and mac address are showing in the table.<br>
 
 7) Now let's configre your unifi controller, first log into it and go to Settings > Wireless Networks. Set up your SSID like the following screenshot.<br>
 
-8) Now go to Settings > Guest Control and set this portion up like the screenshot below.
-<br>
+8) Now go to Settings > Guest Control and set this portion up like the screenshot below.<br>
+
 9) Test your wireless network with any device and then you're done.
