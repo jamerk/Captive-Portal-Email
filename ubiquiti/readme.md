@@ -10,7 +10,7 @@ This server must be accessible to clients, I suggest putting it on the same VLAN
 <br><br>
 For the following we're assuming your SQL database is on the same server as the web server.
 <br><br>
-1) Log into your MySQL/MariaDB instance as root and run the following commands:
+1) Log into your MySQL/MariaDB instance as root and run the following commands (Create your own user and password):
 <br>
 
 ```
