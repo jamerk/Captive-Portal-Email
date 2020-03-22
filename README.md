@@ -22,5 +22,4 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 - Create a record management page with reset/export capability <br>
 - Screenshots for configuration <br><br>
 ## Known Issues
-- None at the moment!
 - Ubiquiti version currently uses a Unifi admin account to authorize guests
