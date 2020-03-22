@@ -38,7 +38,7 @@ FLUSH PRIVILEGES;
 Log into your SQL server and check that the email and mac address are showing in the table.<br>
 
 7) Now let's configre your unifi controller, first log into it and go to Settings > Wireless Networks. Set up your SSID like the following screenshot.<br>
-
+![alt text](https://github.com/ITGoon/Captive-Portal-Email/blob/master/ubiquiti/setup_images/wireless_network.PNG)
 8) Now go to Settings > Guest Control and set this portion up like the screenshot below.<br>
-
+![alt text](https://github.com/ITGoon/Captive-Portal-Email/blob/master/ubiquiti/setup_images/guest_control.PNG)
 9) Test your wireless network with any device and then you're done.
