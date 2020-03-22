@@ -2,7 +2,7 @@
 - Apache2/Nginx with PHP configured<br>
 - PHP 7+ with the FPM and MySQL extensions<br>
 - MySQL/MariaDB<br><br>
-This server must be accessible to clients, I suggest putting it on the same VLAN you use for guests that is fully seperate from important infrastructure just in case it's compromised.<br>
+This server must be accessible to clients, I suggest putting it on the same VLAN you use for guests that is fully seperate from important infrastructure just in case it's compromised. Though you MAY need to make a firewall rule allowing it to talk to the unifi controller (Not yet tested).<br>
 <br><br>
 
 # Ubiquiti Unifi Captive Portal Setup
