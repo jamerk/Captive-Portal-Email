@@ -45,7 +45,7 @@ FLUSH PRIVILEGES;
 6) Test what you've done so far by navigating to and submitting an email address at your captive portal -> http://Captive_Portal_Web_Server_IP/guest/s/default<br>
 Log into your SQL server and check that the email and mac address are showing in the table.<br>
 
-7) Now let's configre your unifi controller, first log into it and go to Settings > Wireless Networks. Set up your SSID like the following screenshot, set your own SSID name.<br>
+7) Now let's configure your unifi controller, first log into it and go to Settings > Wireless Networks. Set up your SSID like the following screenshot, set your own SSID name.<br>
 ![alt text](https://github.com/ITGoon/Captive-Portal-Email/blob/master/ubiquiti/setup_images/wireless_network.PNG)
 8) Now go to Settings > Guest Control and set this portion up like the screenshot below, put your captive portal web server IP where it says CaptivePortalWebServer.<br>
 ![alt text](https://github.com/ITGoon/Captive-Portal-Email/blob/master/ubiquiti/setup_images/guest_control.PNG)
