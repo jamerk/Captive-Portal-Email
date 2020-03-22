@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("localhost", "DB_USERNAME", "DB_PASSWORD", "captive_unifi");
+$link = mysqli_connect("localhost", "DB_USERNAME", "DB_PASSWORD", "captive_data");
 
 // Check connection
 if($link === false){
