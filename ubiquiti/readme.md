@@ -21,7 +21,7 @@ FLUSH PRIVILEGES;
 
 <br>
 
-2) Exit and then run the import command to create the structure of the captive portal database:<br>
+2) Exit and then run the import command to create the structure of the captive portal database (This file is in the base folder of this repo):<br>
 
 ```
  mysql -u root -p captive_data < captive_data.sql
