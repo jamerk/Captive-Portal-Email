@@ -44,6 +44,9 @@
 <form id="form1">
 Enter Your Email Address:<br>
 <input id="emailField" type="email" name="emails" required><br><br>
+<?php
+        echo '<input type="hidden' . '" name="mac' . '" value=' . '"' . $_GET["id"] . '">';
+?>
 <input type="submit" name="Submit" id="submitbutton" class="btn btn-lg btn-primary" value="Connect">
 </form>
 
