@@ -2,7 +2,7 @@
 This is a PHP and JavaScript based captive portal that requires only a valid email address for login<br><br>
 Each email submitted is marked with date/time, the client's MAC address, and stored with an incremental numeric value.
 <br><br>
-There are two versions here. One is meant for Ruckus Wireless' Hotspot service (Tested with both Unleashed and ZoneDirector controllers) and one is meant for Ubiquiti Unifi controllers (Currently a work in progress).
+There are two versions here. One is meant for Ruckus Wireless' Hotspot service (Tested with both Unleashed and ZoneDirector controllers) and one is meant for Ubiquiti Unifi controllers (Tested with Unifi Controller 5.10.25).
 
 ## Credits
 - Alex Ortmanns, https://forums.ruckuswireless.com/ruckuswireless/topics/best_practice_for_a_captive_portal_without_a_password <br>
@@ -14,6 +14,7 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 - jQuery Validation, https://jqueryvalidation.org/ <br>
 - Darin Dimitrov, https://stackoverflow.com/questions/5052315/how-to-fire-jquery-function-only-if-form-is-valid <br>
 - https://stackoverflow.com/questions/31612454/using-javascript-to-populate-a-hidden-field-from-url-parameter <br>
+- Art of Wifi, https://github.com/Art-of-WiFi/UniFi-API-client <br>
 
 <br><br>
 ## To Do
@@ -21,4 +22,5 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 - Create a record management page with reset/export capability <br>
 - Screenshots for configuration <br><br>
 ## Known Issues
-- None at the moment! 
+- None at the moment!
+- Ubiquiti version currently uses a Unifi admin account to authorize guests
