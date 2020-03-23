@@ -20,6 +20,6 @@ There are two versions here. One is meant for Ruckus Wireless' Hotspot service (
 ## To Do
 - Make it all work with IIS and SQL Express <br>
 - Create a record management page with reset/export capability <br>
-- Screenshots for configuration <br><br>
+- Screenshots for Ruckus configuration <br><br>
 ## Known Issues
 - Ubiquiti version currently uses a Unifi admin account to authorize guests
