@@ -41,8 +41,8 @@ class UnifiApi
     /**
      * public properties
      */
-    public $user          = 'john';
-    public $password      = 'Jsajsa28!';
+    public $user          = 'USER';
+    public $password      = 'PASSWORD';
     public $site          = 'default';
     public $baseurl       = 'https://192.168.1.38:8443';
     public $version       = '5.10.25';
